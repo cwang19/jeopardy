@@ -1,7 +1,8 @@
 {
   "name": "jeopardy",
   "version": "0.1.0",
-  "private": true,
+  "private": "true",
+  "homepage": "http://cwang19.github.io/jeopardy/",
   "dependencies": {
     "@date-io/date-fns": "^1.3.11",
     "@material-ui/core": "^4.5.1",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
