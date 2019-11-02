@@ -45,7 +45,7 @@ function App() {
       queries.push(`max_date=${moment(maxDate).format("YYYY-MM-DD")}`);
       const queryString = queries.join('&');
       setIsLoading(true);
-      const apiClues = await axios.get(`http://jservice.io/api/clues?${queryString}`);
+      const apiClues = await axios.get(`https://cors-anywhere.herokuapp.com/http://jservice.io/api/clues?${queryString}`);
       setIsLoading(false);
       setClues(apiClues.data);
     }
