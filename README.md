@@ -1,3 +1,18 @@
+# Jeopardy 
+
+## Overview
+I developed a Jeopardy web app with React and Material-UI that allows users to filter questions by date, difficulty, and category. Multiple filters can be selected concurrently; the web app will reload and update results each time a filter changes value. I call questions from the API by querying question category, date, and difficulty level.
+
+* **Filtering by date**: Questions aired on specific dates can be selected by specifying a date range. Users can pick start and end dates either by selecting a date in the date picker calendar or by typing the date into the text box. 
+
+* **Filtering by difficulty**: Question difficulty is controlled with a slider component, which has tick marks for each level of question difficulty (represented as dollar values). 
+
+* **Filtering by category**: In order to allow users to filter by category, I scraped the http://jservice.io/popular page and created a JSON file containing the category titles and ID values of the 63 most popular categories. I then imported that JSON file into my category search filter, which has a drop-down menu from which the user can see possible menu items. There is also an auto-suggest feature built into my search bar to alert the user to which categories are and are not available. I chose to limit users to choosing from popular categories to improve the web app's speed; initially, when I imported all of the categories from the API, my web app frequently crashed due to the volume of categories available.
+
+I enjoyed making this app, and I learned a great deal from the process; not only was it the first web app I've built, but it was also my first encounter with React and a much more intensive experience with JavaScript. A live version of my web app can be accessed at the following link: https://cwang19.github.io/jeopardy/
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
