@@ -83,7 +83,7 @@ function App() {
         }}
       >
       <h2>Question: How do you filter Jeopardy questions?</h2>
-      <h2>Answer: Use the components below to filter clues by date aired, category, and difficulty!</h2>
+      <h2>Answer: "What is: 'Use the components below to filter clues by date aired, category, and difficulty'"!</h2>
       <div
         style={{
           display: "flex",
